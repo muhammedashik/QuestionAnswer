@@ -1,0 +1,37 @@
+
+<div class="container">
+    <div class="row align-items-center vh-100">
+       
+        <div class="col-6 mx-auto">
+           
+            <div class="card shadow border">
+                <div class="card-body d-flex flex-column align-items-center">
+                    <form #form="ngForm">
+                        <div class="row">
+                            <div class="col-3"><label for="">Name</label><span class="text-danger">*</span> </div>
+                            <div class=" col-9">
+                                <input type="text" class="form-control form-control-sm" [(ngModel)]="model.name" required
+                                   #username ="ngModel" name="name" id=""  [class.is-invalid]="username.invalid && username.touched">
+                                   <small class="text-danger" [class.d-none]="username.valid || username.untouched">Name is required</small>
+                            </div>
+                            <div class="col-3 mt-2"><label for="">E-mail</label> <span class="text-danger">*</span></div>
+                            <div class=" col-9 mt-2">
+                                <input type="text" class="form-control form-control-sm" [(ngModel)]="model.email" required
+                                  #useremail="ngModel"  name="email" id="" [class.is-invalid]="useremail.invalid && useremail.touched">
+                                  <small class="text-danger" [class.d-none]="useremail.valid || useremail.untouched">Email is required</small>
+                            </div>
+                            <div class="col-12 d-flex flex-column align-items-center mt-2">
+                                <button class="btn btn-primary btn-sm" [disabled]="form.invalid" (click)="submit()">Start Quiz</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

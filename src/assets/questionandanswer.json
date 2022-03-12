@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Is Narendra Modi the prime minister of the India ?",
+        "answer":"Yes", 
+        "id": 1
+    },
+    {
+        "question": "Is Mumbai the capital of India ?",
+        "answer":"No",
+        "id": 2
+    },
+    {
+        "question": "Red fort is situated in Delhi?",
+        "answer":"Yes", 
+        "id": 3
+    },
+    {
+        "question": "Is Ramnadh Kovinth the president of India?",
+        "answer": "Yes",
+        "id": 4
+    }
+]
